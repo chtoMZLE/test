@@ -1,0 +1,65 @@
+@media (max-width: 1200px) {
+    .sidebar {
+        width: 70px;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .sidebar.open {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .sidebar.open .header__nav {
+        font-size: 35px;
+    }
+
+    .sidebar.open .header__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;  
+        gap: 15px; 
+    }
+
+    .sidebar.open footer {
+        display: block;
+        font-size: 30px;
+    }
+
+    /* Cтили для отключения hover-эффектов */
+    
+    .button__addtask,
+    .board__title--settings {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .header__nav-button:hover {
+        color: #D2D2D4;
+        background-color: #16354D;
+    }
+    
+    .main__button--addBoard:hover {
+        background-color: #D2D2D4;
+    }
+    
+    .board__title--settings:hover {
+        color: inherit;
+    }
+
+    .button__addtask:hover {
+        background-color: #E4E5EA;
+    }
+}
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles/style.css" rel="stylesheet">
+    <link href="./styles/media.css" rel="stylesheet">
+    <title>Task Board</title>
+</head>
+<body>
+    <div class="grid">
+        <div id = "sidebar" class="sidebar">
+            <header class="header">
+                <nav class="header__nav">
+                    <button id = "nav-btn" class="header__nav-button">
+                        ☰
+                    </button>
+                    <ul class="header__list">
+                        <li><a class="header__link" href="#!">Главная</a></li>
+                        <li><a class="header__link" href="#!">Аккаунт</a></li>  
+                        <li><a class="header__link header__link--active" href="#!">Мои доски</a></li>
+                        <li><a class="header__link" href="#!">Уведомления</a></li>  
+                    </ul>
+                </nav>
+            </header>
+            <footer class="footer">
+                    <ul class="footer__list">
+                        <li><a class="header__link" href="#!">+7(777)777-77-77</a></li>
+                        <li><a class="header__link" href="#!">aaaa@gmail.com</a></li>  
+                    </ul>
+            </footer>
+        </div>
+        <main class="main">
+            <button class="main__button--addBoard">+ Добавить доску</button>
+            <div class="main__workspace">
+            </div>
+        </main>
+    </div>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>
+
+
