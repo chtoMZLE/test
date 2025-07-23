@@ -2,10 +2,10 @@ import { initSidebarToggle } from './sidebar.js';
 import { initBoardLogic } from './board.js';
 import { initTaskHandlers } from './tasks.js';
 import { initBoardMenuHandlers } from './boardMenu.js';
+import { loadBoards } from './storage.js';
 
-document.addEventListener("DOMContentLoaded", () => {
-    initSidebarToggle();
-    initBoardLogic();
-    initTaskHandlers();
-    initBoardMenuHandlers();
-});
+initSidebarToggle();
+initBoardLogic();
+initTaskHandlers();
+initBoardMenuHandlers();
+loadBoards();

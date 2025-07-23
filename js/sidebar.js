@@ -4,6 +4,10 @@ export function initSidebarToggle() {
 
     navBtn.onclick = () => {
         const isOpen = nav.classList.toggle('open');
+
+        // Закрытие меню досок при открытии бокового меню
+        document.querySelectorAll('.board__menu').forEach(m => m.remove());
+
         if (window.innerWidth <= 1200) {
             navBtn.textContent = isOpen ? '✕' : '☰';
         } else {
@@ -12,6 +16,7 @@ export function initSidebarToggle() {
         }
     };
 
+    // Сброс меню при ресайзе
     window.addEventListener('resize', () => {
         if (window.innerWidth > 1200) {
             navBtn.textContent = '☰';
